@@ -1,2 +1,22 @@
-a gui tool to help you view information in MongoDB.
-it is developed on pyside.
+===============
+ MongoDBViewer
+===============
+A gui tools working with MongoDB implied by pure-Python.
+
+Licence
+=======
+Berkeley Software Distribution license
+
+Requirments
+===========
+- pyside
+- pymongo
+
+Running
+=======
+Make sure you have installed the latest pyside and pymongo. Double click on gui.py
+while run MongoDBViewer.
+
+Author
+======
+Wu Nannan <nannanwu@gmail.com>
