@@ -1,15 +1,13 @@
-PYPI = -i http://192.168.18.9/pypi
-
 all: MongoDBViewer.exe
 
 Scripts:
 	virtualenv . --no-site-packages --distribute
-	Scripts/easy_install.exe $(PYPI) pywin32
-	Scripts/easy_install.exe $(PYPI) PySide
-	Scripts/easy_install.exe $(PYPI) pymongo
+	Scripts/easy_install.exe pywin32
+	Scripts/easy_install.exe PySide
+	Scripts/easy_install.exe pymongo
 
 MongoDBViewer.exe: Scripts
-	Scripts/python `where pyinstaller.py` MongoDBViewer.spec
+	Scripts/python.exe `where pyinstaller.py` MongoDBViewer.spec
 
 clean_dist:
 	rm build -rf
